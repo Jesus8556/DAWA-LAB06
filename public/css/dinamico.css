@@ -1,0 +1,42 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+/* dinamico.css */
+.small-image {
+    width: 100px; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantén la proporción de aspecto original */
+    border-radius: 50%; /* Hace que la imagen sea redondeada */
+  }
+  
+
+/* styles.css */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+[data-anijs="bounceIn"] {
+    animation: bounceIn 1s ease-in-out;
+}
